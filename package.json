@@ -1,0 +1,16 @@
+{
+  "name": "screen-simulation",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "grapesjs": "^0.22.14"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="72" viewBox="0 0 220 72">
+  <rect width="220" height="72" rx="10" fill="#e8eef5" stroke="#9aa8b8"/>
+  <circle cx="48" cy="36" r="18" fill="#fff" stroke="#9aa8b8"/>
+  <text x="48" y="42" text-anchor="middle" font-family="Segoe UI, Arial" font-size="14" fill="#5b6b7c" font-weight="700">AM</text>
+  <circle cx="172" cy="36" r="18" fill="#16324f"/>
+  <text x="172" y="42" text-anchor="middle" font-family="Segoe UI, Arial" font-size="14" fill="#fff" font-weight="700">PM</text>
+</svg>

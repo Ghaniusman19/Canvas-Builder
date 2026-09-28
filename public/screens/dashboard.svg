@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="820" viewBox="0 0 1440 820">
+  <rect width="1440" height="820" fill="#eef3f8"/>
+  <rect width="232" height="820" fill="#16324f"/>
+  <text x="28" y="48" font-family="Segoe UI, Arial" font-size="22" fill="#fff" font-weight="700">myHR</text>
+  <rect x="18" y="86" width="196" height="40" rx="8" fill="#2b5173"/>
+  <text x="36" y="112" font-family="Segoe UI, Arial" font-size="14" fill="#dbe7f3">Dashboard</text>
+  <text x="36" y="162" font-family="Segoe UI, Arial" font-size="14" fill="#9fb4c8">People</text>
+  <text x="36" y="198" font-family="Segoe UI, Arial" font-size="14" fill="#9fb4c8">Leave</text>
+  <text x="36" y="234" font-family="Segoe UI, Arial" font-size="14" fill="#9fb4c8">Payroll</text>
+  <rect x="232" width="1208" height="72" fill="#fff"/>
+  <text x="260" y="44" font-family="Segoe UI, Arial" font-size="20" fill="#16324f" font-weight="600">Employee Dashboard</text>
+  <circle cx="1368" cy="36" r="16" fill="#dbe7f3"/>
+  <rect x="260" y="104" width="360" height="150" rx="14" fill="#fff"/>
+  <text x="284" y="142" font-family="Segoe UI, Arial" font-size="13" fill="#6b7c8f">LEAVE BALANCE</text>
+  <text x="284" y="186" font-family="Segoe UI, Arial" font-size="36" fill="#16324f" font-weight="700">14</text>
+  <text x="284" y="216" font-family="Segoe UI, Arial" font-size="14" fill="#6b7c8f">days remaining</text>
+  <rect x="640" y="104" width="360" height="150" rx="14" fill="#fff"/>
+  <text x="664" y="142" font-family="Segoe UI, Arial" font-size="13" fill="#6b7c8f">NEXT PAY DATE</text>
+  <text x="664" y="186" font-family="Segoe UI, Arial" font-size="28" fill="#16324f" font-weight="700">14 Mar 2026</text>
+  <rect x="1020" y="104" width="388" height="150" rx="14" fill="#fff"/>
+  <text x="1044" y="142" font-family="Segoe UI, Arial" font-size="13" fill="#6b7c8f">STATUS</text>
+  <text x="1044" y="186" font-family="Segoe UI, Arial" font-size="28" fill="#0f9d58" font-weight="700">Active</text>
+  <rect x="260" y="276" width="720" height="500" rx="14" fill="#fff"/>
+  <text x="284" y="320" font-family="Segoe UI, Arial" font-size="18" fill="#16324f" font-weight="600">Leave request notes</text>
+  <rect x="284" y="348" width="672" height="180" rx="10" fill="#f7fafc" stroke="#d9e2ec"/>
+  <text x="304" y="384" font-family="Segoe UI, Arial" font-size="14" fill="#94a3b8">Add a detailed note for this request</text>
+  <text x="284" y="568" font-family="Segoe UI, Arial" font-size="18" fill="#16324f" font-weight="600">Select start date</text>
+  <rect x="284" y="588" width="280" height="44" rx="8" fill="#fff" stroke="#d9e2ec"/>
+  <text x="304" y="616" font-family="Segoe UI, Arial" font-size="14" fill="#94a3b8">Pick a date</text>
+  <rect x="1004" y="276" width="404" height="500" rx="14" fill="#fff"/>
+  <text x="1028" y="320" font-family="Segoe UI, Arial" font-size="18" fill="#16324f" font-weight="600">Shift</text>
+  <rect x="1028" y="352" width="356" height="120" rx="12" fill="#f3f7fb"/>
+  <text x="1052" y="422" font-family="Segoe UI, Arial" font-size="22" fill="#5b6b7c">AM / PM</text>
+</svg>
