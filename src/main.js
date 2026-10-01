@@ -54,9 +54,12 @@ function renderHome() {
         el("h1", {}, "Canvas Studio"),
         el("p", {}, "Create canvases, overlay simulation layers on screenshots, then preview the learner path. Built with GrapesJS."),
       ]),
-      el("button", { class: "btn primary", type: "button", onclick: createNewCanvas }, [
-        el("span", { html: iconHtml("plus") }),
-        "New canvas",
+      el("div", { class: "home-hero-actions" }, [
+        el("a", { class: "btn ghost", href: "/agent.html" }, "Open agent side"),
+        el("button", { class: "btn primary", type: "button", onclick: createNewCanvas }, [
+          el("span", { html: iconHtml("plus") }),
+          "New canvas",
+        ]),
       ]),
     ])
   );
@@ -102,6 +105,17 @@ function renderHome() {
         el("td", { class: "col-actions" }, [
           el("div", { class: "table-actions" }, [
             el("button", { class: "btn primary", type: "button", onclick: open }, "Open"),
+            el("button", {
+              class: "btn ghost",
+              type: "button",
+              onclick: () => {
+                if (!canvas.screens?.length) {
+                  toast("Add screens in the builder before opening agent view.");
+                  return;
+                }
+                window.location.href = `/agent.html?canvas=${encodeURIComponent(canvas.id)}`;
+              },
+            }, "Agent"),
             el("button", {
               class: "btn ghost",
               type: "button",

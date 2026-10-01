@@ -197,12 +197,26 @@ function blankState() {
 export function loadState() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return blankState();
+    if (!raw) {
+      const seeded = blankState();
+      saveState(seeded);
+      return seeded;
+    }
     const parsed = JSON.parse(raw);
-    if (!parsed || !Array.isArray(parsed.canvases)) return blankState();
+    if (!parsed || !Array.isArray(parsed.canvases)) {
+      const seeded = blankState();
+      saveState(seeded);
+      return seeded;
+    }
     return parsed;
   } catch {
-    return blankState();
+    const seeded = blankState();
+    try {
+      saveState(seeded);
+    } catch {
+      /* ignore quota on seed */
+    }
+    return seeded;
   }
 }
 
