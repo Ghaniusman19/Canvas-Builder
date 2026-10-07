@@ -1,5 +1,5 @@
 import "./styles.css";
-import { loadState, saveState, createCanvas, duplicateCanvas } from "./store.js";
+import { loadState, saveState, createCanvas, duplicateCanvas, resetState } from "./store.js";
 import { el, toast } from "./utils.js";
 import { iconHtml } from "./icons.js";
 import { mountEditor } from "./editor.js";
@@ -43,6 +43,19 @@ function editCanvas(canvas) {
   });
 }
 
+function resetDemoData() {
+  const count = state.canvases.length;
+  if (
+    !confirm(
+      `Reset demo data?\n\nThis permanently deletes all ${count} canvas(es) saved in this browser (including uploaded screenshots) and restores the “Sample myHR” demo. This can't be undone.`
+    )
+  )
+    return;
+  state = resetState();
+  renderHome();
+  toast("Demo data restored.", "success");
+}
+
 function renderHome() {
   app.innerHTML = "";
   const home = el("div", { class: "home" });
@@ -55,6 +68,7 @@ function renderHome() {
         el("p", {}, "Create canvases, overlay simulation layers on screenshots, then preview the learner path. Built with GrapesJS."),
       ]),
       el("div", { class: "home-hero-actions" }, [
+        el("button", { class: "btn danger-outline", type: "button", onclick: resetDemoData }, "Reset demo data"),
         el("a", { class: "btn ghost", href: "/agent.html" }, "Open agent side"),
         el("button", { class: "btn primary", type: "button", onclick: createNewCanvas }, [
           el("span", { html: iconHtml("plus") }),

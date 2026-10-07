@@ -224,6 +224,21 @@ export function saveState(state) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
 }
 
+export function resetState() {
+  try {
+    localStorage.removeItem(STORAGE_KEY);
+  } catch {
+    /* storage unavailable */
+  }
+  const next = blankState();
+  try {
+    saveState(next);
+  } catch (error) {
+    console.error(error);
+  }
+  return next;
+}
+
 export function createCanvas({ title, description, teamTag, autofillFields }) {
   return {
     id: uid("canvas"),
